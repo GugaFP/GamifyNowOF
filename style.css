@@ -16,68 +16,131 @@
     padding: 0%;
     box-sizing: border-box;
 }
-
-section.slider{
-    margin: 0 auto;
+.slideshow-container {
+    
     width: 100%;
-    height: auto;
-    padding: 0 !important;
-    overflow: hidden;
+    position: relative;
+    margin: auto;
+
 }
 
-.slider-content{
-
-    width: 400%;
-    height: auto;
-    display: flex;
-}
-
-.slider-content input{
+.slideshow {
     display: none;
 }
 
-.slider-box {
-    width: 25%;
-    height: auto;
-    position: relative;
-    text-align: center;
-}
 
-.slider-box img{
-    width: 100%;
-}
+.slideshow img { width:100%; }
 
-.nav-manual, .nav-auto{
-    position: absolute;
-    width: 100%;
-    margin-top: 43%;
-    justify-content: center;
-}
-
-.nav-manual .manual-btn, .nav-auto div {
-    border: 1px solid var(--azul-gamifynow);
-    padding: 10px;
-    border-radius: 50%;
+.prev,
+.next {
     cursor: pointer;
-    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
-    margin-right: 10px;
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.legenda {
+
+    width: auto;
+    color: #fdfdfd;
+    font-size: 0.9em;
+    padding:5px;
+    position: absolute;
+    bottom: 18%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 10%;
 
 }
 
-.nav-manual.manual-btn:hover{
-    border-color: var(--azul-gamifynow);
+.numeracao {
+
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+}
+
+.paginacao { 
+  
+    width:100%; 
+    float:left;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.dot {
+
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 4px;
+    border-radius: 50px;
+    background-color: #007cff;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.ativo,
+.dot:hover {
+    background-color: #242424;
 }
 
 
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*960PX BREAKPOINT - Ajustando o texto para desktop*/
+@media (min-width:60em){
 
 
-
-
-
-
+    .legenda   { font-size:2em; padding:8px; }
+    .paginacao { margin:20px 0; }
+    .dot       { width:18px; height:18px; }
+}
 
 
 
@@ -89,19 +152,10 @@ section.slider{
     margin: 0 auto;
 }
 
-.banner {
-    height: 100vh;
-
-    background-image: linear-gradient(0deg, rgba(24, 10, 115, 1) 0%, rgba(24, 10, 115, 0.55) 0%), url(img/FundoGamify.png);
-    background-repeat: no-repeat;
-
-    background-position: 0px 150px;
-}
-
 header {
     background-color: var(--azul-gamifynow);
 
-    height: 200px;
+    height: 160px;
 }
 
 header img {
@@ -113,9 +167,5 @@ header img {
 }
 
 header .logo {
-    padding: 0.5%;
-
-    display: flex;
-
-    justify-content: center;
+    margin-top: 50%;
 }
