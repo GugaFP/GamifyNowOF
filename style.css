@@ -16,6 +16,61 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--azul-gamifynow);
+
+    height: 156px;
+}
+
+header img{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 42.5%;
+    
+}
+
+header .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slideshow-container {
     
     width: 100%;
@@ -26,13 +81,37 @@
 
 .slideshow {
     display: none;
+    position: relative;
 }
 
 
-.slideshow img { width:100%; }
+.slideshow img { 
+    width:100%;
+    background-image: linear-gradient(0deg, rgba(24, 10, 115, 1) 2%, rgba(24, 10, 115, 0.8) 10%);
+}
 
-.prev,
-.next {
+
+.legenda {
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 35%;
+
+}
+
+.legenda span{
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.legenda{
+    font-family: "Kanit";
+    font-weight: bold;
+}
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -51,38 +130,12 @@
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover,
+.prev:hover, 
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-.legenda {
-
-    width: auto;
-    color: #fdfdfd;
-    font-size: 0.9em;
-    padding:5px;
-    position: absolute;
-    bottom: 18%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    left: 10%;
-
-}
-
-.numeracao {
-
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-
-}
-
 .paginacao { 
-  
     width:100%; 
     float:left;
     margin: 10px 0;
@@ -93,18 +146,17 @@
 .dot {
 
     cursor: pointer;
-    height: 13px;
+    height: 10px;
     width: 13px;
     margin: 0 4px;
     border-radius: 50px;
-    background-color: #007cff;
+    background-color: var(--azul-gamifynow);
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
-.ativo,
-.dot:hover {
-    background-color: #242424;
+.ativo, .dot:hover {
+    background-color: var(--laranja-gamifynow);
 }
 
 
@@ -115,23 +167,8 @@
     animation-duration: 2s;
 }
 
-@-webkit-keyframes fade {
-    from {
-        opacity: .4;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-@keyframes fade {
-    from {
-        opacity: .4;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 
 /*960PX BREAKPOINT - Ajustando o texto para desktop*/
 @media (min-width:60em){
@@ -140,32 +177,4 @@
     .legenda   { font-size:2em; padding:8px; }
     .paginacao { margin:20px 0; }
     .dot       { width:18px; height:18px; }
-}
-
-
-
-
-
-.container-grid {
-    width: 80vw;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-header {
-    background-color: var(--azul-gamifynow);
-
-    height: 160px;
-}
-
-header img {
-    width: 180px;
-
-    position: relative;
-    top: 2px;
-    left: 550px;
-}
-
-header .logo {
-    margin-top: 50%;
 }
