@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gamifynow</title>
+    <link rel="shortcut icon" href="img/FaviconGamifyNow.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,10 +20,18 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/LogoGamifyNow.png" alt="Logo da Empresa GamifyNow">
-        <div class="container-grid">
-            
+    <header id="#home">
+        
+        <div class="container-grid"> 
+            <nav class="menu">
+                <a href="#home"><img src="img/LogoGamifyNow.png" alt="Logo da Empresa GamifyNow"></a>
+                <a href="#sobre">Sobre</a>
+                <a href="#portfólio">Nossos Portfólios</a>
+                <p>GamifyNow</p>
+                <a href="#cases">Cases de Sucesso</a>
+                <a href="#contato">Contate-Nos</a>
+            </nav>
+
         </div>
     </header>
 
@@ -33,7 +42,8 @@
                 <img src="img/SobreNósTransparentGN.png" alt="sobre-nos">
                 <div class="legenda">
                     <span>Sobre Nós</span>
-                    <p>O que é gamificação, sobre a empresa, história..</p>    
+                    <p>O que é gamificação, sobre a empresa, história..</p>
+                    <a href="#sobre">Veja Mais</a>
                 </div>
             </div>
 
@@ -42,6 +52,7 @@
                 <div class="legenda">
                     <span>Cases de Sucesso</span>
                     <p>Alguma dos relatórios de serviços e experiências dos usuários</p>
+                    <a href="#cases">Veja Mais</a>
                 </div>
             </div>
 
@@ -50,6 +61,7 @@
                 <div class="legenda">
                     <span>Portfólio</span>
                     <p>Coleção dos nosso melhores trabalhos realizados</p>
+                    <a href="#portfolio">Veja Mais</a>
                 </div>
             </div>
 
@@ -58,6 +70,7 @@
                 <div class="legenda">
                     <span>Contate-Nos</span>
                     <p>Preencha o formulário ou entre em contato conosco para fazer um orçamento</p>
+                    <a href="#contato">Veja Mais</a>
                 </div>
             </div>
 
@@ -74,6 +87,8 @@
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
+
+        
 
         <script type="text/javascript">
             let slides = document.querySelectorAll('.slideshow');
@@ -132,11 +147,15 @@
 
                 slides[slideIndex - 1].style.display = "block";
                 dots[slideIndex - 1].setAttribute('class', 'dot ativo');
-                timeoutID = setTimeout(autoSlides, 9000);
+                timeoutID = setTimeout(autoSlides, 7000);
             }
 
             autoSlides();
         </script>
+
+    </section>
+
+    <section id="sobre">
 
     </section>
 
