@@ -18,7 +18,7 @@
 }
 
 body {
-    background-image: linear-gradient(0deg, rgba(19, 0, 140, 1)2%, rgba(28, 0, 208, 0.8)50%);
+    background-image: linear-gradient(0deg, rgba(19, 0, 140, 2)20%, rgba(28, 0, 208, 0.8)50%);
 }
 
 .container-grid {
@@ -90,16 +90,6 @@ header .container-grid{
     text-decoration-color: var(--laranja-gamifynow);
     color: var(--laranja-gamifynow);
 }
-
-
-
-
-
-
-
-
-
-
 
 .slideshow-container {
     
@@ -220,4 +210,77 @@ header .container-grid{
     .legenda   { font-size:2em; padding:8px; }
     .paginacao { margin:20px 0; }
     .dot       { width:18px; height:18px; }
+}
+
+#sobre{
+    height: 800px;
+}
+
+.titulo {
+    font-family: "Poppins";
+    font-weight: 200;
+    color: white;
+    padding-left: 95px;
+    padding-top: 50px;
+    font-size: 40px;
+    padding-bottom: 50px;
+
+
+
+}
+.imgt {
+    
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    padding-left: 20px;
+
+}
+
+.imgoc img{
+    height: 400px;
+    width: 700px;
+}
+
+
+.textoc p  {
+    font-size: 25px;
+    text-align: right;
+    line-height: 1.5;
+    width: 500px;
+    color: white;
+    font-family: "Kanit";
+}
+
+#portfolio{
+    height: 1000px;
+
+}
+
+#portfolio h2{
+    width: 700px;
+    font-family: "Poppins";
+    color: white;
+    padding-left: 120px;
+    padding-top: 50px;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+#portfolio span{
+    font-size: 40px;
+}
+
+.feedbacks{
+    height: 500px;
+    width: 800px;
+    padding-left: 300px;
+
+    margin-left: 90px;
+
+    display: flex;
+
+    background-color: var(--laranja-gamifynow);
+    border-radius: 20px;
 }
