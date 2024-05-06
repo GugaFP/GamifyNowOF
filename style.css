@@ -57,8 +57,8 @@ header .container-grid{
     width: 150px;
     width: 150px;
     position: absolute;
-    margin-left: 517px;
-    top: 10px;
+    margin-left: 438px;
+    top: 4px;
     
     
 }
@@ -213,7 +213,7 @@ header .container-grid{
 }
 
 #sobre{
-    height: 800px;
+    height: 700px;
 }
 
 .titulo {
@@ -253,8 +253,141 @@ header .container-grid{
     font-family: "Kanit";
 }
 
+
+
+#sobre2{
+    height: 700px;
+}
+
+.container-missao{
+
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+
+}
+
+.blocks1{
+    height: 58px;
+    width: 25%;
+
+    background-color: var(--laranja-gamifynow);
+
+    gap: 20px;
+    padding-left: 55px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.blocks2{
+    height: 58px;
+    width: 25%;
+
+    background-color: var(--laranja-gamifynow);
+
+    gap: 12px;
+    padding-left: 42px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.blocks3{
+    height: 58px;
+    width: 25%;
+
+    background-color: var(--laranja-gamifynow);
+
+    gap: 10px;
+    padding-left: 45px;
+
+    display: flex;
+    align-items: center;
+}
+
+.blocks1 a, .blocks2 a, .blocks3 a{
+
+    width: 100%;
+    color: white;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 700;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-descoration 500ms ease;
+}
+
+.blocks1 img{
+    height: 50px;
+    width: 50px;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-descoration 500ms ease;
+}
+
+.blocks2 img{
+    height: 35px;
+    width: 45px;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-descoration 500ms ease;
+}
+
+.blocks3 img{
+    height: 42px;
+    width: 42px;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-descoration 500ms ease;
+}
+
+.blocks1 a:hover, .blocks2 a:hover, .blocks3 a:hover{
+    text-decoration-color: var(--azul-gamifynow);
+    color: var(--azul-gamifynow);
+}
+
+.blocks1 img:hover, .blocks2 img:hover, .blocks3 img:hover{
+    text-decoration-color: var(--azul-gamifynow);
+    color: var(--azul-gamifynow);
+}
+
+.imgt2{
+    display: flex;
+    justify-content: space-around;
+
+    gap: 80px;
+    margin: 100px 90px;
+
+}
+
+.listas{
+    color: white;
+    font-family: "Kanit";
+    font-size: 25px;
+
+    margin-top: 40px;
+
+}
+
+.listas p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
 #portfolio{
-    height: 1000px;
+    height: 2050px;
 
 }
 
@@ -272,15 +405,167 @@ header .container-grid{
     font-size: 40px;
 }
 
-.feedbacks{
+.feedbacks1{
     height: 500px;
-    width: 800px;
-    padding-left: 300px;
+    width: 900px;
 
     margin-left: 90px;
 
     display: flex;
+    text-align: end;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-left: 10px;
+
+    margin-bottom: 90px;
 
     background-color: var(--laranja-gamifynow);
     border-radius: 20px;
+}
+
+.feedbacks2{
+    height: 500px;
+    width: 900px;
+
+    margin-left: 530px;
+
+    margin-bottom: 70px;
+
+    display: flex;
+    text-align: end;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-right: 10px;
+
+
+    background-color: var(--laranja-gamifynow);
+    border-radius: 20px;
+}
+.feedbacks3{
+    height: 500px;
+    width: 900px;
+
+    margin-left: 90px;
+
+    margin-bottom: 70px;
+
+    display: flex;
+    text-align: end;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-right: 10px;
+
+
+    background-color: var(--laranja-gamifynow);
+    border-radius: 20px;
+}
+
+.rostos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.portmais{
+    height: 70px;
+    width: 35%;
+
+    margin-left: 770px;
+
+    background-color: white;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.portmais a{
+    font-family: "Kanit";
+    font-size: 20px;
+    margin-left: 22px;
+}
+
+.portmais a img{
+    height: 50px;
+    width: 100%;
+
+    margin-top: 10px;
+
+}
+
+#cases{
+    height: 700px;
+
+    margin-top: 70px;
+}
+
+#cases h2{
+    color: white;
+    font-family: "Poppins";
+    font-size: 30px;
+
+    padding-left: 120px;
+}
+
+.container-cards{
+    margin: 50px 100px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+}
+
+.cards1{
+    height: 500px;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--laranja-gamifynow);
+    border-radius: 50px;
+}
+
+.cards1 img{
+    padd
+}
+
+.card1 a{
+    background-color: var(--azul-gamifynow);
+
+    border-radius: 7px;
+    border: none;
+
+    height: 40px;
+    width: 90%;
+
+    color: white;
+
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 600;
+
+}
+.cards2{
+    height: 300px;
+    width: 50%;
+
+    background-color: var(--laranja-gamifynow);
+}
+.cards3{
+    height: 300px;
+    width: 50%;
+
+    background-color: var(--laranja-gamifynow);
+}
+.cards4{
+    height: 300px;
+    width: 50%;
+
+    background-color: var(--laranja-gamifynow);
 }
