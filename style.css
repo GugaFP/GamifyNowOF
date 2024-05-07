@@ -18,7 +18,7 @@
 }
 
 body {
-    background-image: linear-gradient(0deg, rgba(19, 0, 140, 2)20%, rgba(28, 0, 208, 0.8)50%);
+    background-color: var(--azul-gamifynow);
 }
 
 .container-grid {
@@ -511,61 +511,322 @@ header .container-grid{
     padding-left: 120px;
 }
 
-.container-cards{
-    margin: 50px 100px;
-
+.container-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    gap: 40px;
 }
 
-.cards1{
-    height: 500px;
-    width: 40%;
+.card1 {
+    height: 400px;
+    width: 250px;
+
+    margin-top: 70px;
 
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+    padding-bottom: 5px;
+
     background-color: var(--laranja-gamifynow);
-    border-radius: 50px;
+    border-radius: 30px;
+
+
+}
+.card2 {
+    height: 400px;
+    width: 250px;
+
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+    padding-bottom: 5px;
+
+    background-color: var(--laranja-gamifynow);
+    border-radius: 30px;
+
+
+}
+.card3 {
+    height: 400px;
+    width: 250px;
+
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+    padding-bottom: 5px;
+
+    background-color: var(--laranja-gamifynow);
+    border-radius: 30px;
+
+
+}
+.card4 {
+    height: 400px;
+    width: 250px;
+
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+    background-color: var(--laranja-gamifynow);
+    border-radius: 30px;
+
+
 }
 
-.cards1 img{
-    padd
+.card1 img{
+    height: 120px;
+    width: 200px;
+
+    border-radius: 4px 4px 0px 0px;
+} 
+
+.card2 img{
+    height: 60px;
+    width: 190px;
+
+    border-radius: 4px 4px 0px 0px;
 }
 
-.card1 a{
+.card3 img {
+    height: 100px;
+    width: 190px;
+
+    border-radius: 4px 4px 0px 0px;
+}
+.card4 img{
+    height: 50px;
+    width: 180px;
+
+    border-radius: 4px 4px 0px 0px
+}
+
+.card1 button{
+    height: 50px;
+    width: 100px;
+
     background-color: var(--azul-gamifynow);
 
-    border-radius: 7px;
-    border: none;
-
-    height: 40px;
-    width: 90%;
+    border-radius: 15px;
 
     color: white;
+    font-family: "Kanit";
+    font-size: 18px;
 
-    font-family: "Montserrat";
+    cursor: pointer;
+}
+.card2 button{
+    height: 50px;
+    width: 100px;
+
+    background-color: var(--azul-gamifynow);
+
+    border-radius: 15px;
+
+    color: white;
+    font-family: "Kanit";
+    font-size: 18px;
+
+    cursor: pointer;
+}
+.card3 button{
+    height: 50px;
+    width: 100px;
+
+    background-color: var(--azul-gamifynow);
+
+    border-radius: 15px;
+
+    color: white;
+    font-family: "Kanit";
+    font-size: 18px;
+
+    cursor: pointer;
+}
+.card4 button{
+    height: 50px;
+    width: 100px;
+
+    background-color: var(--azul-gamifynow);
+
+    border-radius: 15px;
+
+    color: white;
+    font-family: "Kanit";
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.card1 button:hover, .card2 button:hover, .card3 button:hover, .card4 button:hover{
+    text-decoration-color: var(--azul-gamifynow);
+    color: rgb(0, 191, 255)
+
+}
+
+#contato{
+    height: 1100px;
+}
+
+#contato h2{
+    font-family: "Poppins";
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+
+   margin-left: 140px;
+   margin-right: 140px;
+}
+
+form{
+     width: 50%;
+
+    margin: 70px auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 80px;
+    background-color: var(--laranja-gamifynow);
+
+    color: white;
+    font-family: "Poppins";
+    font-size: 19px;
+}
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: white;
+    background-color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+
+}
+
+.campo-descricao textarea {
+    color: white;
+    background-color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+    padding: 10px;
+    resize: none;
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 15px;
+
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Poppins";
     font-size: 17px;
-    font-weight: 600;
-
 }
-.cards2{
-    height: 300px;
-    width: 50%;
 
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: gray;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--azul-gamifynow);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--azul-gamifynow);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Montserrat";
+    font-weight: 700;
+   
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: backgroundcolor 500ms;
+}
+
+#contato form button:hover {
+    background-color: rgb(16, 0, 82);
+}
+
+footer{
     background-color: var(--laranja-gamifynow);
 }
-.cards3{
-    height: 300px;
-    width: 50%;
 
-    background-color: var(--laranja-gamifynow);
-}
-.cards4{
-    height: 300px;
-    width: 50%;
+footer .container-grid {
+    height: 100%;
 
-    background-color: var(--laranja-gamifynow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
