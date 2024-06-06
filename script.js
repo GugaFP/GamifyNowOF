@@ -43,3 +43,46 @@ onresize = () => {
     // Mostrar o icone do X
     iconeX.style.display = "inline"
 }
+
+function orçamentoForms(event){
+    // Pegar os valores dos inputs
+    let valorNome = document.getElementById("campo-nome").value
+    let valorEmail = document.getElementById("campo-email").value
+    let valorDescricao = document.getElementById("campo-texto").value
+
+    // Organizar os valores em um objeto
+    let infoForm = {
+        nome: valorNome,
+        email: valorEmail,
+        descricao: valorDescricao
+    }
+
+    // Enviar a requisição para a API
+    // Método HTTP POST - Create/Criar -> Cadastrar um novo registro (solicitacao)
+    fetch("http://localhost:3000/forms", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(infoForm)
+    })
+    // CASO SUCESSO
+    .then(resposta => {   
+        console.log(resposta);     
+        
+        // Limpar os inputs
+        document.querySelector("#contato form").reset()
+
+        // Mostrar um alert de sucesso
+        alert("Sua menagem foi enviada com sucesso")
+    })
+    // CASO ERRO
+    .catch(erro => {
+        console.log(erro);
+        // Mostrar alert com msg de erro
+        alert("Erro em sua solicitação")
+    })
+          
+    event.preventDefault()
+}
+

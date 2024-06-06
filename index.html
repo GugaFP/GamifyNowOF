@@ -177,15 +177,15 @@
     <section id="sobre2">
 
         <div class="container-missao">
-            <div class="blocks1">
+            <div id="blocks1" class="blocks1">
                 <img src="svg/MissaoSVG.png" alt="">
-                <a href="#missaoevalores">MISSÃO E VALORES</a>
+                <a onclick="trocarSobre1()" href="#missaoevalores">MISSÃO E VALORES</a>
             </div>
-            <div class="blocks2">
+            <div id="blocks2" class="blocks2">
                 <img src="svg/ControleSVG.png" alt="">
-                <a href="#gamificar">O QUE É GAMIFICAÇÃO?</a>
+                <a onclick="trocarSobre2()" href="#gamificar">O QUE É GAMIFICAÇÃO?</a>
             </div>
-            <div class="blocks3">
+            <div id="blocks3" class="blocks3">
                 <img src="svg/ArquetipoSVG.png" alt="">
                 <a href="#arquetipo">ARQUETIPO DE BARTLEE</a>
             </div>
@@ -279,7 +279,7 @@
         <h2>Para dúvidas ou mais informações sobre orçamentos, serviços e entre outros, enrte em contato conosco ou
             preencha o formulário abaixo, que estraremos em contato.</h2>
 
-        <form>
+        <form onsubmit="orçamentoForms(event)">
             <div class="campo">
                 <label for="campo-nome">Nome</label>
                 <input id="campo-nome" placeholder="Digite o seu nome" type="text">
@@ -287,7 +287,7 @@
 
             <div class="campo">
                 <label for="campo-email">Celular?</label>
-                <input id="campo-email" placeholder="Digite o seu celular" type="email">
+                <input id="campo-email" placeholder="Digite o seu celular" type="text">
             </div>
 
             <div class="campo">
