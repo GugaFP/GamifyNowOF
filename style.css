@@ -40,6 +40,11 @@ header .container-grid{
     justify-content: center;
 }
 
+header button {
+    display: none;
+    cursor: pointer;
+}
+
 .menu p{
     font-size: 50px;
     color: var(--azul-gamifynow);
@@ -867,10 +872,9 @@ footer .icones-redes {
     display: none;
 }
 
-#icone-barras{
+#icone-barras {
     display: none;
 }
-
 
 @media screen and (max-width: 1300px) {
     header {
@@ -878,6 +882,8 @@ footer .icones-redes {
     }
 
     header button {
+        display: unset;
+
         border: none;
         background-color: none;
 
